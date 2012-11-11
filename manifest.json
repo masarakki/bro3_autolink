@@ -1,14 +1,14 @@
-
 {
     "name": "Bro3Autolink",
     "version": "1.0",
     "description": "Bro3 autolink",
     "content_scripts": [
         {
-            "matches": ["*://m9.3gokushi.jp/message/detail.php*"],
+            "matches": ["*://m9.3gokushi.jp/*"],
             "all_frames": true,
             "js": ["lib/jquery.min.js", "lib/bro3autolink.js"]
         }
     ],
-    "manifest_version": 2
+    "manifest_version": 2,
+    "update_url": "https://raw.github.com/masarakki/bro3_autolink/master/update.xml"
 }
