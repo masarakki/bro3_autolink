@@ -7,9 +7,10 @@ replace = (elm) ->
         match = text.match(regex)
         x = match[1]
         y = match[2]
-        "<a href=\"http://m9.3gokushi.jp/big_map.php?x=#{x}&y=#{y}\">#{match[0]}</a>"
+        "<a href=\"http://m9.3gokushi.jp/big_map.php?x=#{x}&y=#{y}\" style=\"display:inline\">#{match[0]}</a>"
     $(elm).html(str)
 
 console.log window.location.pathname
 replace $("#gray02Wrapper > table td", document.body)[4] if window.location.pathname == "/message/detail.php"
-
+for comment in $("#comment tr td:last-child")
+    replace comment

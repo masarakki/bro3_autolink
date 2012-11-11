@@ -1,6 +1,6 @@
 {
     "name": "Bro3Autolink",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Bro3 autolink",
     "content_scripts": [
         {
