@@ -10,7 +10,9 @@ replace = (elm) ->
         "<a href=\"http://m9.3gokushi.jp/big_map.php?x=#{x}&y=#{y}\" style=\"display:inline\">#{match[0]}</a>"
     $(elm).html(str)
 
-console.log window.location.pathname
+replace comment for comment in $("#comment tr td:last-child")
+
 replace $("#gray02Wrapper > table td", document.body)[4] if window.location.pathname == "/message/detail.php"
-for comment in $("#comment tr td:last-child")
-    replace comment
+
+replace comment for comment in $(".hitokoto") if window.location.pathname == "/alliance/chat_view.php"
+
