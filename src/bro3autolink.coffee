@@ -1,7 +1,7 @@
 replace = (elm) ->
-    pattern = "[(（]\s*(\d+)\s*,\s*(\d+)\s*[)）]"
-    regex_all = /[\(（](\d+),(\d+)[\)）]/gm
-    regex = /[\(（](\d+),(\d+)[)\）]/
+    pattern = "[(（]\s*(-?\d+)\s*,\s*(-?\d+)\s*[)）]"
+    regex_all = /[\(（](-?\d+),(-?\d+)[\)）]/gm
+    regex = /[\(（](-?\d+),(-?\d+)[)\）]/
 
     str = $(elm).html().replace regex_all, (text) ->
         match = text.match(regex)
